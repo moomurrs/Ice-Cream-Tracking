@@ -39,5 +39,4 @@
             </form>
         </div>
     </div>
-    <a href="./test.php">link</a>
 </nav>
