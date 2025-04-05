@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -54,7 +53,9 @@
                 </form>
             </div>
         </div>
+        <a href="./test.php">link</a>
     </nav>
+    <h1>Home Page</h1>
 </body>
 
 </html>
