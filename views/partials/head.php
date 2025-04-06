@@ -11,6 +11,6 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <?php require "nav.php"; ?>

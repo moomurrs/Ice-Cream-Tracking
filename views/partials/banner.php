@@ -1,3 +1,3 @@
 <div class="container">
-    <h1 class="fs-1"><?= $heading ?></h1>
+    <h1 class="fst-italic my-3"><?= $heading ?></h1>
 </div>
