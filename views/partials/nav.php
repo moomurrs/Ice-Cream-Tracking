@@ -15,23 +15,23 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/menu.php">Menu</a>
+                    <a class="nav-link" href="/menu">Menu</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/order.php">Order</a>
+                    <a class="nav-link" href="/order">Order</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/gallery.php">Gallery</a>
+                    <a class="nav-link" href="/gallery">Gallery</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/about.php' ? 'active' : ''; ?>" href="/about.php">About</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''; ?>" href="/about">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact.php">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
 
                 <li class="nav-item dropdown">
