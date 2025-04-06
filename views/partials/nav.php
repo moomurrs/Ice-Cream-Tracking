@@ -7,20 +7,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
+
                 <li class="nav-item">
                     <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/' ? 'active' : ''; ?>" href="/">Home
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="">Features</a>
+                    <a class="nav-link" href="/menu.php">Menu</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="/order.php">Order</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.php">Gallery</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/about.php' ? 'active' : ''; ?>" href="/about.php">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.php">Contact</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -35,10 +46,6 @@
                     </div>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
