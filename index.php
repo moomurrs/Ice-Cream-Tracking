@@ -25,5 +25,7 @@ $routes = [
 if(array_key_exists($uri, $routes)){
     require $routes[$uri];
 } else{
-    echo 'doesnt exist';
+    http_response_code(404);
+    require 'views/404.php';
+    die(); // necessary?
 }
