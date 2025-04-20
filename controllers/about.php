@@ -1,6 +1,7 @@
 <?php
 
 $heading = 'About Us';
+$title = 'Contact Us!';
 
 //var_dump($_SERVER['REQUEST_URI']);
 
