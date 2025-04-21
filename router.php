@@ -1,4 +1,5 @@
 <?php
+session_start();
 //var_dump($_SERVER['REQUEST_URI']);
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
@@ -10,6 +11,7 @@ $routes = [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
     '/contact' => 'controllers/contact.php',
+    '/submission' => 'controllers/submission.php',
 ];
 
 //var_dump($uri);
@@ -24,5 +26,8 @@ if(array_key_exists($uri, $routes)){
 } else{
     http_response_code(404);
     require 'views/404.php';
+    //print_r("Bad routing");
+    //var_dump($_SERVER);
+    //var_dump($_POST);
     die(); // necessary?
 }

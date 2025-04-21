@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $heading = 'Home';
 $title = 'JoJo\'s Ice Cream';

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $heading = 'About Us';
 $title = 'About Us!';
