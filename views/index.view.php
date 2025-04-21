@@ -13,7 +13,7 @@
     <div class="row row-cols-1 row-cols-md-2 gy-4 gx-4">
         <div class="col">
             <div class="card border-info">
-                <div class="card-header">Menu</div>
+                <a href="/menu"><div class="card-header">Menu &#9741;</div></a>
                 <div class="card-body">
                     <h4 class="card-title">Bizzare Flavors and Where to Find Them</h4>
                     <p class="card-text fs-3">
@@ -24,18 +24,18 @@
         </div>
         <div class="col">
             <div class="card border-success">
-                <div class="card-header">Order</div>
+                <a href="/order"><div class="card-header">Order &#9741;</div></a>
                 <div class="card-body">
                     <h4 class="card-title">Ready to Order?</h4>
                     <p class="card-text fs-3">
-                        Place your order here! Try making a custom ice cream of your choice! Use our ordering system to choose your pickup time.
+                        Place your order <a href="/order">here! &#9741;</a> Try making a custom ice cream of your choice! Use our ordering system to choose your pickup time.
                     </p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card border-warning">
-                <div class="card-header">Gallery</div>
+                <a href="/gallery"><div class="card-header">Gallery &#9741;</div></a>
                 <div class="card-body">
                     <h4 class="card-title">Not convinced? Check out our picture gallery of what's available!</h4>
                     <p class="card-text fs-3">
@@ -46,7 +46,7 @@
         </div>
         <div class="col">
             <div class="card border-danger mb-4 mb-md-5">
-                <div class="card-header">Contact</div>
+                <a href="/contact"><div class="card-header">Contact &#9741;</div></a>
                 <div class="card-body">
                     <h4 class="card-title">Catering, Questions, or Suggestions?</h4>
                     <p class="card-text fs-3">

@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Corporate money? Ew. Cicadas? Yum!</h4>
                     <p class="card-text fs-3" style="white-space: pre-line;">Bring some unique Bloomington flavors to your taste buds. Our fresh brood of Bloomington cicadas are always a crunch!
-                        Do you enjoy the sweet (or funky) smell of the <a href="https://en.wikipedia.org/wiki/Pyrus_calleryana"><em>Spring Bradford pear tree</em></a> flowers? Now try them in your desert!
+                        Do you enjoy the sweet (or funky) smell of the <a href="https://en.wikipedia.org/wiki/Pyrus_calleryana"><em>Spring Bradford pear tree &#9741;</em></a> flowers? Now try them in your desert!
                     </p>
                 </div>
             </div>
@@ -52,7 +52,7 @@
 
                         Our hours are:
                         <em>Tues-Fri</em>: 3pm -  9pm
-                        <em>Sat-Sun</em>:  12pm - 9pm
+                        <em>Sat-Sun</em>:  12pm - 10pm
                     </p>
             </div>
         </div>
