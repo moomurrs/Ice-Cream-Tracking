@@ -11,6 +11,7 @@ $routes = [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
     '/contact' => 'controllers/contact.php',
+    '/menu' => 'controllers/menu.php',
     '/submission' => 'controllers/submission.php',
 ];
 
