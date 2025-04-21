@@ -12,13 +12,9 @@ $routes = [
     '/about' => 'controllers/about.php',
     '/contact' => 'controllers/contact.php',
     '/menu' => 'controllers/menu.php',
+    '/gallery' => 'controllers/gallery.php',
     '/submission' => 'controllers/submission.php',
 ];
-
-//var_dump($uri);
-//var_dump('<hr>');
-//var_dump($routes);
-//var_dump('<hr>');
 
 
 // neat little trick I saw, only go to page if it exists in array
