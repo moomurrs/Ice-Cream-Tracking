@@ -31,10 +31,21 @@
                 <div class="card-header">Call or Email</div>
                 <div class="card-body">
                     <h4 class="card-title">Fancy a chat or email?</h4>
-                    <ul class="">
-                        <li class="pt-1">Phone: <a href="tel:+8121234567">(812)-123-4567</a></li>
-                        <li class="pt-1">Email: <a href="mailto:jojosIceCream@Bizare.com">jojosIceCream@Bizare.com</a></li>
-                    </ul>
+
+
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Phone:</th>
+                                <td><a href="tel:+8121234567">(812)-123-4567</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email:</th>
+                                <td><a href="mailto:jojosIceCream@Bizare.com">jojosIceCream@Bizare.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
