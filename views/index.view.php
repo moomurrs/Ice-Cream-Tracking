@@ -5,7 +5,7 @@
     <div class="card border-primary mb-4">
         <div class="card-header">Welcome!</div>
         <div class="card-body">
-            <img src="./img/icecream1.jpg" class="img-thumbnail w-50 float-start mx-2 rounded-3">
+            <img src="./img/icecream1.jpg" class="img-thumbnail w-50 float-start me-2 rounded-3">
             <h4 class="card-title">Taster Beware, You're In For a Scare</h4>
             <p class="card-text fs-3">Here at <span class="fw-bold">Jojo's</span> <span class="fst-italic">Bizzare</span> Ice Cream shop 🍦, we serve a range of strange and bizzare flavors to whet your curiosity! 😱
                 Ever read Ripley's <span class="fst-italic">Believe or Not!&#8482;</span> and wasn't grossed out? Do you like the random nature of Jelly Beans&#8482;? Come and try the horrors with your taste-buds! 😎</p>
@@ -16,7 +16,9 @@
             <div class="card border-info">
                 <a href="/menu">
                     <div class="card-header">Menu &#9741;</div>
+                    <img src="./img/menu.jpg" class="img-fluid">
                 </a>
+
                 <div class="card-body">
                     <h4 class="card-title">Bizzare Flavors and Where to Find Them</h4>
                     <p class="card-text fs-3">
@@ -29,7 +31,9 @@
             <div class="card border-success">
                 <a href="/order">
                     <div class="card-header">Order &#9741;</div>
+                    <img src="./img/order.jpg" class="img-fluid">
                 </a>
+
                 <div class="card-body">
                     <h4 class="card-title">Ready to Order?</h4>
                     <p class="card-text fs-3">
@@ -43,10 +47,10 @@
                 <a href="/gallery">
                     <div class="card-header">Gallery &#9741;</div>
                 </a>
+                <?php require "partials/carousel.php"; ?>
                 <div class="card-body">
-                    <h4 class="card-title">Not convinced? Check out our picture gallery of what's available!</h4>
                     <p class="card-text fs-3">
-                        Here's a small selection to peek your
+                        Not convinced? Check out our picture gallery of what's available!
                     </p>
                 </div>
             </div>
@@ -56,6 +60,7 @@
                 <a href="/contact">
                     <div class="card-header">Contact &#9741;</div>
                 </a>
+                <img src="./img/telephone.jpg" class="img-fluid">
                 <div class="card-body">
                     <h4 class="card-title">Catering, Questions, or Suggestions?</h4>
                     <p class="card-text fs-3">
@@ -66,7 +71,7 @@
         </div>
     </div>
 
-    <p class="text-start fst-italic">Stock Photo credit belongs to
+    <p class="text-start fst-italic mt-4">Stock Photo credit belongs to
         <a class="icon-link" href="https://www.pexels.com/">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
