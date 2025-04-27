@@ -94,26 +94,54 @@
                         <h4 class="card-title">Step 3: Choose <em>bizzare</em> toppings</h4>
                     </div>
                     <div class="card-body">
-                        <ul class="fs-4">
-                            <li>Cicadas 🪰<span
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cicada" id="checkCicada">
+                            <label class="form-check-label" for="checkCicada">
+                                Cicadas 🪰<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["cicada"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Flower petals (Pear Tree) 🌸<span
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="flower" id="checkFlower">
+                            <label class="form-check-label" for="checkFlower">
+                                Flower petals (Pear Tree) 🌸<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["flower"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Oreo's &#174; 🍪<span
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="oreos" id="checkOreos">
+                            <label class="form-check-label" for="checkOreos">
+                                Oreo's &#174; 🍪<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["oreos"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Popcorn 🍿<span
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="popcorn" id="checkPopcorn">
+                            <label class="form-check-label" for="checkPopcorn">
+                                Popcorn 🍿<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["popcorn"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Fries 🍟<span
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="fries" id="checkFries">
+                            <label class="form-check-label" for="checkFries">
+                                Fries 🍟<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["fries"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Pepperoni (from Butcher's Block) 🍖<span
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="pepperoni" id="checkPepperoni">
+                            <label class="form-check-label" for="checkPepperoni">
+                                Pepperoni (from Butcher's Block) 🍖<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["pepperoni"], 2, '.', '') ?>)</span>
-                            </li>
-                        </ul>
+                            </label>
+                        </div>
+
                     </div>
                 </div>
             </div>
