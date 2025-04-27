@@ -12,16 +12,30 @@
                     <div class="card-header">
                         <h4 class="card-title">Step 1: Choose a cone</h4>
                     </div>
-                    <div class="card-body">
-                        <ul class="fs-4">
-                            <li>Normal Cone 🍦 <span
+
+                    <div class="card-body fs-4">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Normal Cone 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["normal"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Waffle Cone 🧇 <span
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                            <label class="form-check-label" for="radioDefault2">
+                                Waffle Cone 🧇 <span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["waffle"], 2, '.', '') ?>)</span>
-                            </li>
-                            <li>Bowl (no cone) 🥣</li>
-                        </ul>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                            <label class="form-check-label" for="radioDefault3">
+                                Bowl (no cone) 🥣<span
+                                    class="fs-6">(+$<?= number_format((float) $cone_type["none"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
