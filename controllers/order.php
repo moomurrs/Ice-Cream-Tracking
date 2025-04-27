@@ -7,7 +7,7 @@ $title = 'Order';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    var_dump($_REQUEST);
+    var_dump($_POST);
     die();
 
     if (!empty($_POST['order-submit'])) {

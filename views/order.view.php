@@ -16,21 +16,21 @@
                     <div class="card-body fs-4">
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" id="normalCone">
+                            <input class="form-check-input" type="radio" name="coneType" value="normal" id="normalCone">
                             <label class="form-check-label" for="normalCone">
                                 Normal Cone 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["normal"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" id="waffleCone">
+                            <input class="form-check-input" type="radio" name="coneType" value="waffle" id="waffleCone">
                             <label class="form-check-label" for="waffleCone">
                                 Waffle Cone 🧇 <span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["waffle"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" id="noCone">
+                            <input class="form-check-input" type="radio" name="coneType" value="bowl" id="noCone">
                             <label class="form-check-label" for="noCone">
                                 Bowl (no cone) 🥣<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["none"], 2, '.', '') ?>)</span>
