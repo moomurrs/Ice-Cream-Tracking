@@ -4,7 +4,7 @@
 <main class="container">
     <h4 class="mb-4">Our menu is in three easy steps: Cone type, base flavor, and toppings!</h4>
 
-    <form accept="/order" method="post">
+    <form accept="/order" method="post" novalidate>
         <div class="row row-cols-1 row-cols-xl-3 gx-4 g-4">
 
             <div class="col">
@@ -16,21 +16,26 @@
                     <div class="card-body fs-4">
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" value="normal" id="normalCone">
+                            <input class="form-check-input" type="radio" name="cone-type" value="normal"
+                                id="normalCone">
                             <label class="form-check-label" for="normalCone">
                                 Normal Cone 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["normal"], 2, '.', '') ?>)</span>
                             </label>
+                            <div class="invalid-feedback">
+                                Cone type mandatory!
+                            </div>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" value="waffle" id="waffleCone">
+                            <input class="form-check-input" type="radio" name="cone-type" value="waffle"
+                                id="waffleCone">
                             <label class="form-check-label" for="waffleCone">
                                 Waffle Cone 🧇 <span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["waffle"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="coneType" value="bowl" id="noCone">
+                            <input class="form-check-input" type="radio" name="cone-type" value="bowl" id="noCone">
                             <label class="form-check-label" for="noCone">
                                 Bowl (no cone) 🥣<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["none"], 2, '.', '') ?>)</span>
@@ -151,5 +156,26 @@
     </form>
 
 </main>
+
+<script>
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
 
 <?php require "partials/foot.php"; ?>
