@@ -3,71 +3,71 @@
 
 <main class="container text-center">
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream1.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream2.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream3.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream4.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream5.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream6.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream7.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream8.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream9.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col">
             <div class="card border-primary mb-4">
                 <div class="card-body">
                     <img src="./img/icecream10.jpg" class="img-fluid">
