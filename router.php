@@ -13,6 +13,7 @@ $routes = [
     '/contact' => 'controllers/contact.php',
     '/menu' => 'controllers/menu.php',
     '/gallery' => 'controllers/gallery.php',
+    '/order' => 'controllers/order.php',
     '/submission' => 'controllers/submission.php',
 ];
 
