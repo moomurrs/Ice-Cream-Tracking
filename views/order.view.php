@@ -46,40 +46,43 @@
                         <h4 class="card-title">Step 2: Choose base flavor</h4>
                     </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="chocolate" id="checkChocolate">
-                        <label class="form-check-label" for="checkChocolate">
-                            Chocolate 🍫<span
-                                class="fs-6">(+$<?= number_format((float) $flavor_type["chocolate"], 2, '.', '') ?>)</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="vanilla" id="checkVanilla">
-                        <label class="form-check-label" for="checkVanilla">
-                            Vanilla 🍦<span
-                                class="fs-6">(+$<?= number_format((float) $flavor_type["vanilla"], 2, '.', '') ?>)</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="cookie_dough" id="checkStrawberry">
-                        <label class="form-check-label" for="checkStrawberry">
-                            Strawberry 🍓<span
-                                class="fs-6">(+$<?= number_format((float) $flavor_type["strawberry"], 2, '.', '') ?>)</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="cookie_dough" id="checkCookieDough">
-                        <label class="form-check-label" for="checkCookieDough">
-                            Cookie Dough 🍪<span
-                                class="fs-6">(+$<?= number_format((float) $flavor_type["cookie_dough"], 2, '.', '') ?>)</span>
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="butter_pecan" id="checkButterPecan">
-                        <label class="form-check-label" for="checkButterPecan">
-                            Butter Pecan 🧈<span
-                                class="fs-6">(+$<?= number_format((float) $flavor_type["butter_pecan"], 2, '.', '') ?>)</span>
-                        </label>
+                    <div class="card-body fs-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="chocolate" id="checkChocolate">
+                            <label class="form-check-label" for="checkChocolate">
+                                Chocolate 🍫<span
+                                    class="fs-6">(+$<?= number_format((float) $flavor_type["chocolate"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="vanilla" id="checkVanilla">
+                            <label class="form-check-label" for="checkVanilla">
+                                Vanilla 🍦<span
+                                    class="fs-6">(+$<?= number_format((float) $flavor_type["vanilla"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cookie_dough" id="checkStrawberry">
+                            <label class="form-check-label" for="checkStrawberry">
+                                Strawberry 🍓<span
+                                    class="fs-6">(+$<?= number_format((float) $flavor_type["strawberry"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="cookie_dough" id="checkCookieDough">
+                            <label class="form-check-label" for="checkCookieDough">
+                                Cookie Dough 🍪<span
+                                    class="fs-6">(+$<?= number_format((float) $flavor_type["cookie_dough"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="butter_pecan" id="checkButterPecan">
+                            <label class="form-check-label" for="checkButterPecan">
+                                Butter Pecan 🧈<span
+                                    class="fs-6">(+$<?= number_format((float) $flavor_type["butter_pecan"], 2, '.', '') ?>)</span>
+                            </label>
+                        </div>
+
                     </div>
 
                 </div>
