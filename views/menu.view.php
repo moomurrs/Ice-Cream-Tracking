@@ -5,32 +5,32 @@
     <div class="row row-cols-1 row-cols-xl-3 gx-4 g-4">
 
         <div class="col">
-            <div class="card border-info">
+            <div class="card border-primary">
                 <div class="card-header">
                     <h4 class="card-title">Step 1: Choose a cone</h4>
                 </div>
                 <div class="card-body">
-                    <ul class="">
-                        <li>Normal Cone</li>
-                        <li>Waffle Cone</li>
-                        <li>Bowl (no cone)</li>
+                    <ul class="fs-4">
+                        <li>Normal Cone 🍦</li>
+                        <li>Waffle Cone 🧇</li>
+                        <li>Bowl (no cone) 🥣</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="col">
-            <div class="card border-info">
+            <div class="card border-danger">
                 <div class="card-header">
                     <h4 class="card-title">Step 2: Choose base flavor</h4>
                 </div>
                 <div class="card-body">
-                    <ul class="">
-                        <li class="list-group-items">Chocolate</li>
-                        <li class="list-group-items">Vanilla</li>
-                        <li class="list-group-items">Strawberry</li>
-                        <li class="list-group-items">Cookie Dough</li>
-                        <li class="list-group-items">Butter Pecan</li>
+                    <ul class="fs-4">
+                        <li class="list-group-items">Chocolate 🍫</li>
+                        <li class="list-group-items">Vanilla 🍦</li>
+                        <li class="list-group-items">Strawberry 🍓</li>
+                        <li class="list-group-items">Cookie Dough 🍪</li>
+                        <li class="list-group-items">Butter Pecan 🧈</li>
                     </ul>
                 </div>
             </div>
@@ -42,13 +42,13 @@
                     <h4 class="card-title">Step 3: Choose oddity toppings</h4>
                 </div>
                 <div class="card-body">
-                    <ul class="">
-                        <li>Cicadas</li>
-                        <li>Flower petals (Pear Tree)</li>
-                        <li>Oreo's &#174;</li>
-                        <li>Popcorn</li>
-                        <li>Fries</li>
-                        <li>Pepperoni (from Butcher's Block)</li>
+                    <ul class="fs-4">
+                        <li>Cicadas 🪰</li>
+                        <li>Flower petals (Pear Tree) 🌸</li>
+                        <li>Oreo's &#174; 🍪</li>
+                        <li>Popcorn 🍿</li>
+                        <li>Fries 🍟</li>
+                        <li>Pepperoni (from Butcher's Block) 🍖</li>
                     </ul>
                 </div>
             </div>
