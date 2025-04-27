@@ -93,7 +93,7 @@
                     <div class="card-header">
                         <h4 class="card-title">Step 3: Choose <em>bizzare</em> toppings</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body fs-4">
 
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="cicada" id="checkCicada">
@@ -147,7 +147,7 @@
             </div>
 
         </div>
-        <button type="submit" class="btn btn-success mt-2">Submit</button>
+        <button type="submit" class="btn btn-success my-4">Submit</button>
     </form>
 
 </main>
