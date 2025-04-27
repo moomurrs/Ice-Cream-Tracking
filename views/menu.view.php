@@ -2,6 +2,7 @@
 <?php require "partials/banner.php"; ?>
 
 <main class="container">
+    <h4 class="mb-4">Our menu is in three easy steps: Cone type, base flavor, and toppings!</h4>
     <div class="row row-cols-1 row-cols-xl-3 gx-4 g-4">
 
         <div class="col">
@@ -11,8 +12,8 @@
                 </div>
                 <div class="card-body">
                     <ul class="fs-4">
-                        <li>Normal Cone 🍦</li>
-                        <li>Waffle Cone 🧇</li>
+                        <li>Normal Cone 🍦 <span class="fs-6">(+$2.00)</span></li>
+                        <li>Waffle Cone 🧇 <span class="fs-6">(+$3.00)</span></li>
                         <li>Bowl (no cone) 🥣</li>
                     </ul>
                 </div>
@@ -26,11 +27,11 @@
                 </div>
                 <div class="card-body">
                     <ul class="fs-4">
-                        <li class="list-group-items">Chocolate 🍫</li>
-                        <li class="list-group-items">Vanilla 🍦</li>
-                        <li class="list-group-items">Strawberry 🍓</li>
-                        <li class="list-group-items">Cookie Dough 🍪</li>
-                        <li class="list-group-items">Butter Pecan 🧈</li>
+                        <li class="list-group-items">Chocolate 🍫<span class="fs-6">(+$2.00)</span></li>
+                        <li class="list-group-items">Vanilla 🍦<span class="fs-6">(+$2.00)</span></li>
+                        <li class="list-group-items">Strawberry 🍓<span class="fs-6">(+$2.00)</span></li>
+                        <li class="list-group-items">Cookie Dough 🍪<span class="fs-6">(+$2.00)</span></li>
+                        <li class="list-group-items">Butter Pecan 🧈<span class="fs-6">(+$2.00)</span></li>
                     </ul>
                 </div>
             </div>
@@ -43,12 +44,12 @@
                 </div>
                 <div class="card-body">
                     <ul class="fs-4">
-                        <li>Cicadas 🪰</li>
-                        <li>Flower petals (Pear Tree) 🌸</li>
-                        <li>Oreo's &#174; 🍪</li>
-                        <li>Popcorn 🍿</li>
-                        <li>Fries 🍟</li>
-                        <li>Pepperoni (from Butcher's Block) 🍖</li>
+                        <li>Cicadas 🪰<span class="fs-6">(+$1.50)</span></li>
+                        <li>Flower petals (Pear Tree) 🌸<span class="fs-6">(+$1.00)</span></li>
+                        <li>Oreo's &#174; 🍪<span class="fs-6">(+$2.00)</span></li>
+                        <li>Popcorn 🍿<span class="fs-6">(+$1.00)</span></li>
+                        <li>Fries 🍟<span class="fs-6">(+$1.00)</span></li>
+                        <li>Pepperoni (from Butcher's Block) 🍖<span class="fs-6">(+$2.00)</span></li>
                     </ul>
                 </div>
             </div>
