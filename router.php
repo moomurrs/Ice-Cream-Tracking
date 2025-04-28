@@ -14,7 +14,7 @@ $routes = [
     '/menu' => 'controllers/menu.php',
     '/gallery' => 'controllers/gallery.php',
     '/order' => 'controllers/order.php',
-    //'/submission' => 'controllers/submission.php', no direct endpoint access
+    '/submission' => 'controllers/submission.php',
 ];
 
 
@@ -23,11 +23,19 @@ if (array_key_exists('/' . $uri[1], $routes)) {
     //dd($uri);
 
     if (isset($uri[2]) && strlen($uri[2]) > 0) {
-
-        var_dump(value: "not empty");
-        $submission_id = $uri[2];
-        dd($submission_id);
-
+        // has additional trailing uri
+        //var_dump($uri);
+        //die();
+        
+        if ($uri[1] == "submission") {
+            // only submission API can have additional trailing uri
+            var_dump("valid");
+            die();
+        } else {
+            http_response_code(404);
+            require 'views/404.php';
+            die();
+        }
 
     } else if (isset($uri[2]) && strlen($uri[2]) == 0) {
         //var_dump("single slash");
@@ -36,13 +44,11 @@ if (array_key_exists('/' . $uri[1], $routes)) {
         header('Location: ' . '/' . $uri[1]);
         die();
     } else {
-        //var_dump("empty");
+        // normal routing, no other trailing uri
 
         //var_dump($uri[1]);
         //die();
         $path = "/" . $uri[1];
-
-        //var_dump($path);
 
         require $routes[$path];
     }
