@@ -7,10 +7,14 @@ $title = 'Order';
 $cone_err = false;
 $flavor_err = false;
 
+$cone = '';
+$flavors = '';
+$toppings = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    var_dump($_POST);
-    die();
+    //var_dump($_POST);
+    //die();
 
     if (!isset($_POST['cone-type'])) {
         // cone type is mandatory (but not set)
@@ -20,6 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!isset($_POST['flavor-type'])) {
         // cone type is mandatory (but not set)
         $flavor_err = true;
+    }
+
+    if (!$cone_err && !$flavor_err) {
+        // no error, go to submission
+        $cone = $_POST['cone-type'];
+        $flavors = $_POST['flavor-type'];
+        $toppings = $_POST['topping-type'];
+        var_dump($_POST);
+        die();
     }
 }
 
