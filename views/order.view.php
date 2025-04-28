@@ -4,7 +4,7 @@
 <main class="container">
     <h4 class="mb-4">Our menu is in three easy steps: Cone type, base flavor, and toppings!</h4>
 
-    <form accept="/order" method="post" novalidate>
+    <form accept="/order" method="post" class="needs-validation" novalidate>
         <div class="row row-cols-1 row-cols-xl-3 gx-4 g-4">
 
             <div class="col">
@@ -15,16 +15,14 @@
 
                     <div class="card-body fs-4">
 
-                        <div class="form-check">
+                        <div class="form-check <?= $cone_err ? 'is-invalid' : '' ?>">
+
                             <input class="form-check-input" type="radio" name="cone-type" value="normal"
                                 id="normalCone">
                             <label class="form-check-label" for="normalCone">
                                 Normal Cone 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["normal"], 2, '.', '') ?>)</span>
                             </label>
-                            <div class="invalid-feedback">
-                                Cone type mandatory!
-                            </div>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="cone-type" value="waffle"
@@ -41,6 +39,9 @@
                                     class="fs-6">(+$<?= number_format((float) $cone_type["none"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
+                        <div class="invalid-feedback">
+                            <b>Cone type mandatory!</b>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,42 +53,44 @@
                     </div>
 
                     <div class="card-body fs-4">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="chocolate" id="checkChocolate">
+                        <div class="form-check <?= $flavor_err ? 'is-invalid' : '' ?>">
+                            <input class="form-check-input" type="checkbox" name="flavor-type" value="chocolate" id="checkChocolate">
                             <label class="form-check-label" for="checkChocolate">
                                 Chocolate 🍫<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["chocolate"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="vanilla" id="checkVanilla">
+                            <input class="form-check-input" type="checkbox" name="flavor-type" value="vanilla" id="checkVanilla">
                             <label class="form-check-label" for="checkVanilla">
                                 Vanilla 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["vanilla"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="strawberry" id="checkStrawberry">
+                            <input class="form-check-input" type="checkbox" name="flavor-type" value="strawberry" id="checkStrawberry">
                             <label class="form-check-label" for="checkStrawberry">
                                 Strawberry 🍓<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["strawberry"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="cookie_dough" id="checkCookieDough">
+                            <input class="form-check-input" type="checkbox" name="flavor-type" value="cookie_dough" id="checkCookieDough">
                             <label class="form-check-label" for="checkCookieDough">
                                 Cookie Dough 🍪<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["cookie_dough"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="butter_pecan" id="checkButterPecan">
+                            <input class="form-check-input" type="checkbox" name="flavor-type" value="butter_pecan" id="checkButterPecan">
                             <label class="form-check-label" for="checkButterPecan">
                                 Butter Pecan 🧈<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["butter_pecan"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
-
+                        <div class="invalid-feedback">
+                            <b>Flavor type mandatory!</b>
+                        </div>
                     </div>
 
                 </div>
