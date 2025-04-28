@@ -9,8 +9,8 @@ $flavor_err = false;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    //var_dump($_POST);
-    //die();
+    var_dump($_POST);
+    die();
 
     if (!isset($_POST['cone-type'])) {
         // cone type is mandatory (but not set)
