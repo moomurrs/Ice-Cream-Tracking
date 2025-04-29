@@ -6,7 +6,7 @@
     <div class="row row-cols-1 row-cols-xl-3 gx-4 g-4">
 
         <div class="col">
-            <div class="card border-primary">
+            <div class="card border-danger">
                 <div class="card-header">
                     <h4 class="card-title">Step 1: Choose a cone</h4>
                 </div>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col">
-            <div class="card border-danger">
+            <div class="card border-success">
                 <div class="card-header">
                     <h4 class="card-title">Step 2: Choose base flavor</h4>
                 </div>
