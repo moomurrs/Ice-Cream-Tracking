@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+$heading = 'Order Received!';
+$title = 'Submitted';
+
+$test_order = [
+    "cone-type" => "normal",
+    "flavor-type" => ["chocolate", "vanilla"],
+    "topping" => ["cicada", "flower"]
+];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -15,5 +25,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-var_dump($order_id);
-die();
+require "{$root}/views/submission.view.php";
