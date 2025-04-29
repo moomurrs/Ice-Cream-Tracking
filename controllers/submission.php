@@ -20,7 +20,7 @@ $time_epoch = $test_time;
 
 $date = new DateTime("@$time_epoch");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
-$human_time = $date->format("H:i:s");
+$human_time = $date->format("g:i");
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

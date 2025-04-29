@@ -33,8 +33,8 @@
 
                         ?>
 
-                        <p><b>Total</b>: 
-                            <?php 
+                        <p><b>Total</b>:
+                            <?php
                             $total = 0.0;
 
                             $total += $cone_type[$order['cone-type']];
@@ -47,7 +47,8 @@
                                 $total += number_format((float) $topping_type[$t], 2, '.', '');
                             }
 
-                            echo '$' . number_format((float) $total, 2, '.', '');;
+                            echo '$' . number_format((float) $total, 2, '.', '');
+                            ;
                             ?>
                         </p>
 
@@ -63,11 +64,10 @@
                     <h4 class="card-title">Pickup Time:</h4>
                 </div>
 
-                <div class="card-body fs-4">
-                    <p>
+                <div class="card-body">
+                    <span class="fs-2 fw-bold">
                         <?= $human_time ?>
-                    </p>
-
+                    </span> EST
                 </div>
             </div>
         </div>
