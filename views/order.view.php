@@ -104,14 +104,14 @@
                     <div class="card-body fs-4">
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="cicada" id="checkCicada">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="cicada" id="checkCicada">
                             <label class="form-check-label" for="checkCicada">
                                 Cicadas 🪰<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["cicada"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="flower" id="checkFlower">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="flower" id="checkFlower">
                             <label class="form-check-label" for="checkFlower">
                                 Flower petals (Pear Tree) 🌸<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["flower"], 2, '.', '') ?>)</span>
@@ -119,7 +119,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="oreos" id="checkOreos">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="oreos" id="checkOreos">
                             <label class="form-check-label" for="checkOreos">
                                 Oreo's &#174; 🍪<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["oreos"], 2, '.', '') ?>)</span>
@@ -127,7 +127,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="popcorn" id="checkPopcorn">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="popcorn" id="checkPopcorn">
                             <label class="form-check-label" for="checkPopcorn">
                                 Popcorn 🍿<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["popcorn"], 2, '.', '') ?>)</span>
@@ -135,7 +135,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="fries" id="checkFries">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="fries" id="checkFries">
                             <label class="form-check-label" for="checkFries">
                                 Fries 🍟<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["fries"], 2, '.', '') ?>)</span>
@@ -143,7 +143,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping[]" value="pepperoni" id="checkPepperoni">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="pepperoni" id="checkPepperoni">
                             <label class="form-check-label" for="checkPepperoni">
                                 Pepperoni (from Butcher's Block) 🍖<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["pepperoni"], 2, '.', '') ?>)</span>

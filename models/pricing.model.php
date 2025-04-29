@@ -7,8 +7,8 @@ $cone_type = [
 ];
 
 $flavor_type = [
-    "chocolate" => 2.00,
-    "vanilla" => 2.00,
+    "chocolate" => 2.10,
+    "vanilla" => 2.30,
     "strawberry" => 2.00,
     "cookie_dough" => 2.50,
     "butter_pecan" => 2.30,

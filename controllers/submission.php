@@ -7,8 +7,10 @@ $title = 'Submitted';
 $test_order = [
     "cone-type" => "normal",
     "flavor-type" => ["chocolate", "vanilla"],
-    "topping" => ["cicada", "flower"]
+    "topping-type" => ["cicada", "flower"]
 ];
+
+$order = $test_order;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
