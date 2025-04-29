@@ -15,5 +15,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-var_dump("submitted");
+var_dump($order_id);
 die();

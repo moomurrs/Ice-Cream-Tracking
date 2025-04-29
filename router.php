@@ -18,7 +18,7 @@ $routes = [
 ];
 
 
-// neat little trick I saw, only go to page if it exists in array
+// only go to page if it exists in array
 if (array_key_exists('/' . $uri[1], $routes)) {
     //dd($uri);
 
@@ -26,17 +26,18 @@ if (array_key_exists('/' . $uri[1], $routes)) {
         // has additional trailing uri
         //var_dump($uri);
         //die();
-        
+
         if ($uri[1] == "submission") {
             // only submission API can have additional trailing uri
-            var_dump("valid");
-            die();
+            //var_dump("valid");
+            //die();
+            $order_id = $uri[2];
+            require $routes['/submission'];
         } else {
             http_response_code(404);
             require 'views/404.php';
             die();
         }
-
     } else if (isset($uri[2]) && strlen($uri[2]) == 0) {
         //var_dump("single slash");
 
@@ -46,15 +47,18 @@ if (array_key_exists('/' . $uri[1], $routes)) {
     } else {
         // normal routing, no other trailing uri
 
-        //var_dump($uri[1]);
-        //die();
-        $path = "/" . $uri[1];
+        if ($uri[1] == 'submission') {
+            // can't directly go to /submission, redirect to /order
+            header('Location: ' . '/order');
+            die();
+        } else {
+            // normal routing
+            //var_dump("going to api");
+            $path = "/" . $uri[1];
 
-        require $routes[$path];
+            require $routes[$path];
+        }
     }
-
-    //dd($trailing_uri);
-
 } else {
     http_response_code(404);
     require 'views/404.php';
