@@ -18,15 +18,7 @@ $date = new DateTime("@$curr_time");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
 $curr_hour = (int) $date->format("H"); // will be in 24h
 
-if ($hours[0] < $curr_hour && $curr_hour < $hours[1]){
-    $open = true;
-    //echo "open";
-    //die();
-} else {
-    $open = false;
-    //echo "closed";
-    //die();
-}
+$open = $hours[0] < $curr_hour && $curr_hour < $hours[1];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
