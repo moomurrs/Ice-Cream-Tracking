@@ -6,13 +6,22 @@ $heading = 'Order';
 $title = 'Order';
 $cone_err = false;
 $flavor_err = false;
+$open = true;
 
 $cone = '';
 $flavors = '';
 $toppings = '';
 
-//var_dump($test_cone);
-//die();
+$hours = [5, 10];
+$curr_time = time();
+$date = new DateTime("@$curr_time");
+$curr_hour = (int) $date->format("H");
+
+if (5 < $curr_hour && $curr_hour < 10){
+    $open = true;
+} else {
+    $open = false;
+}
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 

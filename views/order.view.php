@@ -2,6 +2,11 @@
 <?php require "partials/banner.php"; ?>
 
 <main class="container">
+
+    <?php 
+        echo "<h1 class='bg-primary rounded-3 px-3 py-1'>We're currently Closed! Please come back later.</h1>"
+    ?>
+
     <h4 class="mb-4">Our menu is in three easy steps: Cone type, base flavor, and toppings!</h4>
 
     <form accept="/order" method="post" class="needs-validation" novalidate>
@@ -17,7 +22,7 @@
 
                         <div class="form-check <?= $cone_err ? 'is-invalid' : '' ?>">
 
-                            <input class="form-check-input" type="radio" name="cone-type" value="normal"
+                            <input class="form-check-input" type="radio" name="cone-type" value="normal" <?= $open ? '' : 'disabled' ?>
                                 id="normalCone">
                             <label class="form-check-label" for="normalCone">
                                 Normal Cone 🍦<span
@@ -25,7 +30,7 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="cone-type" value="waffle"
+                            <input class="form-check-input" type="radio" name="cone-type" value="waffle" <?= $open ? '' : 'disabled' ?>
                                 id="waffleCone">
                             <label class="form-check-label" for="waffleCone">
                                 Waffle Cone 🧇 <span
@@ -33,7 +38,7 @@
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="cone-type" value="bowl" id="noCone">
+                            <input class="form-check-input" type="radio" name="cone-type" value="bowl" id="noCone" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="noCone">
                                 Bowl (no cone) 🥣<span
                                     class="fs-6">(+$<?= number_format((float) $cone_type["none"], 2, '.', '') ?>)</span>
@@ -54,35 +59,35 @@
 
                     <div class="card-body fs-4">
                         <div class="form-check <?= $flavor_err ? 'is-invalid' : '' ?>">
-                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="chocolate" id="checkChocolate">
+                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="chocolate" id="checkChocolate" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkChocolate">
                                 Chocolate 🍫<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["chocolate"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="vanilla" id="checkVanilla">
+                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="vanilla" id="checkVanilla" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkVanilla">
                                 Vanilla 🍦<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["vanilla"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="strawberry" id="checkStrawberry">
+                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="strawberry" id="checkStrawberry" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkStrawberry">
                                 Strawberry 🍓<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["strawberry"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="cookie_dough" id="checkCookieDough">
+                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="cookie_dough" id="checkCookieDough" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkCookieDough">
                                 Cookie Dough 🍪<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["cookie_dough"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="butter_pecan" id="checkButterPecan">
+                            <input class="form-check-input" type="checkbox" name="flavor-type[]" value="butter_pecan" id="checkButterPecan" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkButterPecan">
                                 Butter Pecan 🧈<span
                                     class="fs-6">(+$<?= number_format((float) $flavor_type["butter_pecan"], 2, '.', '') ?>)</span>
@@ -104,14 +109,14 @@
                     <div class="card-body fs-4">
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="cicada" id="checkCicada">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="cicada" id="checkCicada" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkCicada">
                                 Cicadas 🪰<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["cicada"], 2, '.', '') ?>)</span>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="flower" id="checkFlower">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="flower" id="checkFlower" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkFlower">
                                 Flower petals (Pear Tree) 🌸<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["flower"], 2, '.', '') ?>)</span>
@@ -119,7 +124,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="oreos" id="checkOreos">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="oreos" id="checkOreos" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkOreos">
                                 Oreo's &#174; 🍪<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["oreos"], 2, '.', '') ?>)</span>
@@ -127,7 +132,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="popcorn" id="checkPopcorn">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="popcorn" id="checkPopcorn" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkPopcorn">
                                 Popcorn 🍿<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["popcorn"], 2, '.', '') ?>)</span>
@@ -135,7 +140,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="fries" id="checkFries">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="fries" id="checkFries" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkFries">
                                 Fries 🍟<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["fries"], 2, '.', '') ?>)</span>
@@ -143,7 +148,7 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="pepperoni" id="checkPepperoni">
+                            <input class="form-check-input" type="checkbox" name="topping-type[]" value="pepperoni" id="checkPepperoni" <?= $open ? '' : 'disabled' ?>>
                             <label class="form-check-label" for="checkPepperoni">
                                 Pepperoni (from Butcher's Block) 🍖<span
                                     class="fs-6">(+$<?= number_format((float) $topping_type["pepperoni"], 2, '.', '') ?>)</span>
@@ -155,7 +160,7 @@
             </div>
 
         </div>
-        <button type="submit" class="btn btn-success my-4">Submit</button>
+        <button type="submit" class="btn btn-success my-4" <?= $open ? '' : 'disabled' ?>>Submit</button>
     </form>
 
 </main>

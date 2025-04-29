@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+
+
 $heading = 'Order Received!';
 $title = 'Submitted';
 
@@ -11,6 +13,15 @@ $test_order = [
 ];
 
 $order = $test_order;
+
+
+$test_time = 1483228510;
+$time_epoch = $test_time;
+
+$date = new DateTime("@$time_epoch");
+$human_time = $date->format("H:i:s");
+
+echo $human_time;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 

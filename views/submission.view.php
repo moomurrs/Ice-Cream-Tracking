@@ -58,13 +58,15 @@
         </div>
 
         <div class="col">
-            <div class="card border-danger">
+            <div class="card border-danger mb-4">
                 <div class="card-header">
                     <h4 class="card-title">Pickup Time:</h4>
                 </div>
 
                 <div class="card-body fs-4">
-
+                    <p>
+                        <?= $human_time ?>
+                    </p>
 
                 </div>
             </div>
