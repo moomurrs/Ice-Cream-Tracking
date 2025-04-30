@@ -11,8 +11,8 @@ $test_order = [
     "flavor-type" => ["chocolate", "vanilla"],
     "topping-type" => ["cicada", "flower"]
 ];
-$order = $test_order;
-$test_time = 1483228510;
+#$order = $test_order;
+#$test_time = 1483228510;
 
 
 $pdo = new PDO('sqlite:database/db.sqlite');
@@ -28,11 +28,21 @@ $statement->execute([
 
 $pdo = null; // close
 
-var_dump($statement->fetchAll(PDO::FETCH_ASSOC));
+$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-die();
+if (count($result) == 0) {
+    http_response_code(404);
+    require 'views/404.php';
+    die();
+}
 
-$time_placed = $test_time;
+$order = [
+    "cone-type" => $result[0]['cone_type'],
+    "flavor-type" => unserialize($result[0]['flavor_types']),
+    "topping-type" => unserialize($result[0]['topping_types'])
+];
+
+$time_placed = $result[0]['epoch'];
 
 $date = new DateTime("@$time_placed");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
