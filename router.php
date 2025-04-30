@@ -17,7 +17,6 @@ $routes = [
     '/submission' => 'controllers/submission.php',
 ];
 
-die();
 
 // only go to page if it exists in array
 if (array_key_exists('/' . $uri[1], $routes)) {
