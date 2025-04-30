@@ -11,17 +11,14 @@ $test_order = [
     "flavor-type" => ["chocolate", "vanilla"],
     "topping-type" => ["cicada", "flower"]
 ];
-
 $order = $test_order;
-
-
 $test_time = 1483228510;
-$time_epoch = $test_time;
+
+$time_epoch = time() + (60 * 15);;
 
 $date = new DateTime("@$time_epoch");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
 $human_time = $date->format("g:i");
-
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 

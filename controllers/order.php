@@ -39,12 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $cone = $_POST['cone-type'];
         $flavors = $_POST['flavor-type'];
         $toppings = $_POST['topping-type'];
+        $curr_time = time();
 
         $pdo = new PDO('sqlite:database/db.sqlite');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $query = "INSERT into Orders (order_id, cone_type, flavor_types, topping_types)
-        VALUES (:order_id, :cone_type, :flavor_types, :topping_types)";
+        $query = "INSERT into Orders (order_id, cone_type, flavor_types, topping_types, epoch)
+        VALUES (:order_id, :cone_type, :flavor_types, :topping_types, :epoch)";
 
         $statement = $pdo->prepare($query);
 
@@ -53,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ':cone_type' => $cone,
             ':flavor_types' => serialize($flavors),
             ':topping_types' => serialize($toppings),
+            ':epoch' => $curr_time,
         ]);
 
         $pdo = null; // close
