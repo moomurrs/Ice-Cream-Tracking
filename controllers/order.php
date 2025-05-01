@@ -12,7 +12,10 @@ $cone = '';
 $flavors = '';
 $toppings = '';
 date_default_timezone_set('America/Indiana/Indianapolis');
-$hours = [6 + 12, 11 + 12];
+$hours = [
+    6 + 12,  # opening PM time
+    11 + 12, # closing PM time
+];
 $curr_time = time();
 $date = new DateTime("@$curr_time");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
@@ -48,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         VALUES (:order_id, :cone_type, :flavor_types, :topping_types, :epoch)";
 
         $statement = $pdo->prepare($query);
-
+        $new_order_id = uniqid();
         $statement->execute([
-            ':order_id' => uniqid(),
+            ':order_id' => $new_order_id,
             ':cone_type' => $cone,
             ':flavor_types' => serialize($flavors),
             ':topping_types' => serialize($toppings),
@@ -59,7 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $pdo = null; // close
 
-        echo 'submitted to db';
+        // go to submission screen with order_id as URI
+        header('Location: ' . '/submission/' . $new_order_id);
         die();
     }
 

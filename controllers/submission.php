@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-
 $heading = 'Order Received!';
 $title = 'Submitted';
 
@@ -13,7 +11,6 @@ $test_order = [
 ];
 #$order = $test_order;
 #$test_time = 1483228510;
-
 
 $pdo = new PDO('sqlite:database/db.sqlite');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -31,6 +28,7 @@ $pdo = null; // close
 $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if (count($result) == 0) {
+    // order not in database, error out
     http_response_code(404);
     require 'views/404.php';
     die();
