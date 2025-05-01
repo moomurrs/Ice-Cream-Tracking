@@ -12,11 +12,11 @@ $cone = '';
 $flavors = '';
 $toppings = '';
 date_default_timezone_set('America/Indiana/Indianapolis');
-$hours = [3, 11];
+$hours = [6 + 12, 11 + 12];
 $curr_time = time();
 $date = new DateTime("@$curr_time");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
-$curr_hour = (int) $date->format("g"); // will be in 12h
+$curr_hour = (int) $date->format("H"); // will be in 24h
 
 
 $open = $hours[0] <= $curr_hour && $curr_hour < $hours[1];
