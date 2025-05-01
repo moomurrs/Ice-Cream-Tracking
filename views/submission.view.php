@@ -47,8 +47,7 @@
                                 $total += number_format((float) $topping_type[$t], 2, '.', '');
                             }
 
-                            echo '$' . number_format((float) $total, 2, '.', '');
-                            ;
+                            echo '$' . number_format((float) $total, 2, '.', '');;
                             ?>
                         </p>
 
@@ -59,15 +58,15 @@
         </div>
 
         <div class="col">
-            <div class="card border-danger mb-4">
+            <div class="card <?= $is_ready ? 'border-success' : 'border-danger' ?> mb-4">
                 <div class="card-header">
-                    <h4 class="card-title">Pickup Time:</h4>
+                    <h4 class="card-title">Order Status: <?= $is_ready ? 'Ready!' : 'In Progress...' ?></h4>
                 </div>
 
-                <div class="card-body">
-                    <span class="fs-2 fw-bold">
-                        <?= $human_time ?>
-                    </span> EST
+                <div class="card-body fs-4">
+                    <p>Pickup time: <span class="fs-2 fw-bold">
+                            <?= $human_time ?></span><span class="fs-5">pm <em>EST</em></span>
+                    </p>
                 </div>
             </div>
         </div>

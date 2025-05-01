@@ -40,9 +40,12 @@ $order = [
     "topping-type" => unserialize($result[0]['topping_types'])
 ];
 
-$time_placed = $result[0]['epoch'];
+const make_time = 60;  // for testing only, orders take 60 seconds to finish
 
-$date = new DateTime("@$time_placed");
+$pickup_time = $result[0]['epoch'] + (make_time);
+$is_ready = time() >= $pickup_time;
+
+$date = new DateTime("@$pickup_time");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));
 $human_time = $date->format("g:i");
 
