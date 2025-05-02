@@ -16,15 +16,17 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/menu">Menu</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/menu' ? 'active' : ''; ?>" href="/menu">Menu</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/order">Order</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/order' ? 'active' : ''; ?>"
+                        href="/order">Order</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/gallery">Gallery</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/gallery' ? 'active' : ''; ?>"
+                        href="/gallery">Gallery</a>
                 </li>
 
                 <li class="nav-item">
@@ -33,11 +35,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/submission/123">Testing</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/contact' ? 'active' : ''; ?>"
+                        href="/contact">Contact</a>
                 </li>
 
             </ul>
