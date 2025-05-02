@@ -15,12 +15,13 @@
                     <option>Catering</option>
                     <option>Requests</option>
                 </select>
-                <textarea required name="text-input" class="form-control <?= $comment_err ? 'is-invalid' : '' ?>" id="text-input" placeholder="Type in your message here..."></textarea>
+                <textarea required name="text-input" class="form-control <?= $comment_err ? 'is-invalid' : '' ?>"
+                    id="text-input" placeholder="Type in your message here..."></textarea>
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Please enter your message
                 </div>
 
-                <button type="submit" class="btn btn-success mt-2">Submit</button>
+                <button type="submit" class="btn btn-success mt-2" id="liveToastBtn">Submit</button>
             </form>
 
         </div>
@@ -79,5 +80,33 @@
                     </p>
                 </div>
             </div>
+
+            <?php if ($show_toast): ?>
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto fs-4">Message Received 📨</strong>
+                            <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="toast-body fs-6">
+                            We'll get back to you as soon as we can.
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
 </main>
+
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+    }
+</script>
 <?php require "partials/foot.php"; ?>
