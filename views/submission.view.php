@@ -47,7 +47,8 @@
                                 $total += number_format((float) $topping_type[$t], 2, '.', '');
                             }
 
-                            echo '$' . number_format((float) $total, 2, '.', '');;
+                            echo '$' . number_format((float) $total, 2, '.', '');
+                            ;
                             ?>
                         </p>
 
@@ -70,12 +71,34 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
+    <?php if ($is_recent): ?>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert">
+                <div class="toast-header">
+                    <strong class="me-auto">Order Place</strong>
+                    <small><?= (time() - $time_placed) . 's ago' ?></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" data-bs-animation="autohide"
+                        aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Drop by around pickup time.
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
 
 </main>
 
-
+<script>
+    // autohides toast if shown
+    const toastExample = document.getElementById("liveToast");
+    //console.log(toastExample);
+    if (toastExample != null) {
+        const toast = new bootstrap.Toast(toastExample)
+        toast.show()
+    }
+</script>
 
 <?php require "partials/foot.php"; ?>

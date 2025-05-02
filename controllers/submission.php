@@ -42,8 +42,10 @@ $order = [
 
 const make_time = 60;  // for testing only, orders take 60 seconds to finish
 
-$pickup_time = $result[0]['epoch'] + (make_time);
+$time_placed = $result[0]['epoch'];
+$pickup_time = $time_placed + (make_time);
 $is_ready = time() >= $pickup_time;
+$is_recent = time() <= $time_placed + 7;
 
 $date = new DateTime("@$pickup_time");
 $date->setTimezone(new DateTimeZone("America/Indiana/Indianapolis"));

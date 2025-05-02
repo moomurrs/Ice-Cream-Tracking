@@ -13,7 +13,7 @@ $flavors = '';
 $toppings = '';
 date_default_timezone_set('America/Indiana/Indianapolis');
 $hours = [
-    6 + 12,  # opening PM time
+    6 ,  # opening PM time
     11 + 12, # closing PM time
 ];
 $curr_time = time();
