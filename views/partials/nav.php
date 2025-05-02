@@ -10,32 +10,32 @@
             <ul class="navbar-nav me-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/' ? 'active' : ''; ?>" href="/">Home
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/' ? 'active' : '' ?>" href="/">Home
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/menu' ? 'active' : ''; ?>" href="/menu">Menu</a>
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/menu' ? 'active' : '' ?>" href="/menu">Menu</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/order' ? 'active' : ''; ?>"
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/order' ? 'active' : '' ?>"
                         href="/order">Order</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/gallery' ? 'active' : ''; ?>"
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/gallery' ? 'active' : '' ?>"
                         href="/gallery">Gallery</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/about' ? 'active' : ''; ?>"
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/about' ? 'active' : '' ?>"
                         href="/about">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/contact' ? 'active' : ''; ?>"
+                    <a class="nav-link <?= $_SERVER['REQUEST_URI'] == '/contact' ? 'active' : '' ?>"
                         href="/contact">Contact</a>
                 </li>
 
