@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$heading = 'Order Received!';
+$heading = 'Order Summary';
 $title = 'Submitted';
 
 $test_order = [
@@ -16,9 +16,7 @@ $pdo = new PDO('sqlite:database/db.sqlite');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $query = "SELECT * FROM Orders WHERE order_id = :order_id LIMIT 1";
-
 $statement = $pdo->prepare($query);
-
 $statement->execute([
     ':order_id' => $order_id,
 ]);

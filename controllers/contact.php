@@ -39,10 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $pdo = null; // close
         $show_toast = true;
 
-        // re
-        //header('Location: ' . '/contact');
-        //die();
-
     } else {
         // comment is empty, send error
         $comment_err = true;
