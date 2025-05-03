@@ -1,7 +1,5 @@
 <?php require "partials/head.php"; ?>
 
-
-
 <?php
 $heading = 'Error!';
 require "partials/banner.php"; ?>

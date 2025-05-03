@@ -33,7 +33,6 @@
                 <div class="card-body">
                     <h4 class="card-title">Fancy a chat or email?</h4>
 
-
                     <table class="table table-hover">
                         <tbody>
                             <tr>
@@ -52,34 +51,27 @@
         </div>
         <div class="col">
             <div class="card border-success">
-                <div class="card-header">Instagram</div>
+                <a href="www.instagram.com">
+                    <div class="card-header">Instagram</div>
+                    <img src="./img/instagram.jpg" class="img-fluid">
+                </a>
                 <div class="card-body">
+
                     <h4 class="card-title">Insta Handle</h4>
-                    <p class="card-text fs-3">
-                        ???
-                    </p>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card border-warning">
-                <div class="card-header">Youtube</div>
+            <div class="card border-warning mb-4">
+                <a href="www.youtube.com">
+                    <div class="card-header">Youtube</div>
+                    <img src="./img/youtube.jpg" class="img-fluid">
+                </a>
                 <div class="card-body">
-                    <h4 class="card-title">Watch our video!</h4>
-                    <p class="card-text fs-3" style="white-space: pre-line;">???
-                    </p>
+                    <h4 class="card-title">Watch our channel!</h4>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card border-danger mb-4 mb-md-5">
-                <div class="card-header">???</div>
-                <div class="card-body">
-                    <h4 class="card-title">???</h4>
-                    <p class="card-text fs-3" style="white-space: pre-line;">???
-                    </p>
-                </div>
-            </div>
 
             <?php if ($show_toast): ?>
                 <div class="toast-container position-fixed bottom-0 end-0 p-3">
